@@ -1,0 +1,91 @@
+h2 {
+    margin: 0;
+}
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2vw;
+}
+.infos {
+    height: 50%;
+}
+.catSpec {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 1.2em;
+    margin: 8px 0;
+}
+
+#catPhoto {
+    border-radius: 10px;
+}
+#nameCat {
+    font-family: 'Amatic SC';
+    font-size: 3em;
+    color: rgba(0, 175, 206, 1);
+}
+#homeIcon{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+#illustration {
+    position: absolute;
+    width: 20%;
+    left: 0%;
+    bottom: 0%;
+}
+#buttonReservation {
+    background: white;
+    border: 1px solid rgba(0, 175, 206, 1);
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 1em;
+    padding: 2.5% 4.8%;
+    width: max-content;
+    margin-top: 100px;
+}
+
+#buttonReservation:hover  {
+    background:  rgba(0, 175, 206, 0.5);
+    color : white;
+}
+#buttonReservation:active  {
+    background:  rgba(0, 175, 206, 1);
+}
+
+/* Responsive */
+@media (max-width: 720px){
+    .details{
+      flex-direction: column;
+    }
+    .left {
+        align-items: center;
+        margin-left: 0;
+    }
+    .infos{
+        text-align: center;
+    }
+    #buttonReservation {
+        margin-top: 62px;
+    }
+}
+
+@media (max-width: 420px){
+    #nameCat{
+        margin-top: 10px;
+    }
+    #illustration {
+        width: 30%;
+    }
+}
+
